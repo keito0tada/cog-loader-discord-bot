@@ -48,8 +48,6 @@ def check_environment() -> None:
 
 
 def run_bot() -> None:
-    logging.basicConfig(level=logging.INFO)
-
     check_environment()
 
     bot = Bot(command_prefix="/", intents=discord.Intents.all())
