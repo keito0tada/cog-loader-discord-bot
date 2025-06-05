@@ -1,0 +1,3 @@
+[submodule "packages/misc_cog"]
+	path = packages/misc_cog
+	url = https://github.com/keito0tada/misc-discord-cog.git
