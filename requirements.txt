@@ -1,7 +1,5 @@
-discord
 discord[voice]
 psycopg2-binary
-psycopg2
 types-psycopg2
 lark
 aiohttp
