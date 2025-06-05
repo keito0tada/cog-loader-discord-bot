@@ -57,6 +57,7 @@ def run_bot() -> None:
     @bot.event
     async def on_ready() -> None:
         logging.info("On Ready")
+        await bot.load_extension("cog_loader.pingpong")
         await bot.tree.sync()
 
     bot.run(DISCORD_BOT_TOKEN)  # type: ignore
