@@ -9,3 +9,6 @@ gspread
 python-dotenv
 ruff
 mypy
+flask
+waitress
+types-waitress
