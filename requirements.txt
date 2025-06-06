@@ -12,3 +12,4 @@ mypy
 flask
 waitress
 types-waitress
+packages/misc_cog

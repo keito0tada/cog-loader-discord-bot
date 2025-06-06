@@ -47,6 +47,10 @@ def check_environment() -> None:
         sys.exit(1)
 
 
+async def load_extensions(bot: commands.Bot) -> None:
+    await bot.load_extension("misc_cog.cog")
+
+
 def run_bot() -> None:
     check_environment()
 
@@ -56,6 +60,7 @@ def run_bot() -> None:
     async def on_ready() -> None:
         logging.info("On Ready")
         await bot.load_extension("cog_loader.pingpong")
+        await load_extensions(bot)
         await bot.tree.sync()
 
     bot.run(DISCORD_BOT_TOKEN)  # type: ignore
